@@ -31,6 +31,7 @@ body{
     align-items: center;
     top:0;
     position: sticky;
+    z-index: 10;
   
 }
 .logo{
@@ -52,6 +53,7 @@ body{
         height: 72px;
         width: 100px;
         display: flex;
+        cursor: pointer;
     
 }
 .imagelogo{
@@ -154,6 +156,50 @@ body{
     align-items: center;
    
 }
+#language{
+    width: 20rem;
+}
+
+#type{
+    width: 15rem;
+}
+
+#pitch{
+    width: 10rem;
+}
+
+#speed{
+    width: 8rem;
+}
+
+@media screen and (max-width: 784px){
+    .work-section-tags{
+        gap: 0px;
+    }
+    .settings{
+        gap: 0px;
+    }
+    #language{
+        width: 49.5%;
+        font-size: 12px;
+    }
+    
+    #type{
+        width: 49.5%;
+    }
+    
+    #pitch{
+        width: 49.5%;
+    }
+    
+    #speed{
+        width: 49.5%;
+    }
+    .select-tags{
+        width: 49.5%;  
+    }
+    
+}
 
 .text-area{
     border: 2px solid #999999;
@@ -220,6 +266,7 @@ textarea{
     justify-content: space-between;
     height: 2.5rem;
     gap: 4px;
+    /* background-color: pink; */
     /* flex-direction: column; */
 }
 .generate-button{
@@ -787,11 +834,6 @@ textarea{
    }
    .heading{
     font-size: 22px;
-   }
-   .settings{
-    display: flex;
-   flex-wrap: wrap;
-    width: 100%;
    }
   .work-section-sidebar{
     width: 100%;
