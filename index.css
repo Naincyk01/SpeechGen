@@ -32,14 +32,6 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-@media screen and (min-width: 780px) {
-  .menu-item,
-  .menu-items,
-  #menuContent {
-    visibility: hidden;
-  }
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -88,11 +80,6 @@ body {
   width: 100px;
   display: flex;
   cursor: pointer;
-}
-@media screen and (min-width: 780px) {
-  .menu {
-    display: none;
-  }
 }
 .imagelogo {
   height: 50px;
@@ -203,30 +190,6 @@ body {
 #speed {
   width: 8rem;
 }
-
-@media screen and (max-width: 784px) {
-  .work-section-tags {
-    gap: 0px;
-  }
-
-  #language {
-    width: 49.5%;
-    font-size: 12px;
-  }
-
-  #type {
-    width: 49.5%;
-  }
-
-  #pitch {
-    width: 49.5%;
-  }
-
-  #speed {
-    width: 49.5%;
-  }
-}
-
 .text-area {
   border: 2px solid #999999;
   width: 100%;
@@ -370,7 +333,6 @@ textarea {
   /* align-items: center; */
   flex-wrap: wrap;
 }
-
 .feature-card {
   background-color: #eeeeee;
   border-radius: 8px;
@@ -892,3 +854,38 @@ textarea {
     font-size: 22px;
   }
 }
+@media screen and (min-width: 780px) {
+  .menu-item,
+  .menu-items,
+  #menuContent {
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 780px) {
+  .menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 784px) {
+  .work-section-tags {
+    gap: 0px;
+  }
+
+  #language {
+    width: 49.5%;
+    font-size: 12px;
+  }
+
+  #type {
+    width: 49.5%;
+  }
+
+  #pitch {
+    width: 49.5%;
+  }
+
+  #speed {
+    width: 49.5%;
+  }
+}
+
